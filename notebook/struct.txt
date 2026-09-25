@@ -1,0 +1,27 @@
+delivery_time_prediction.ipynb
+
+1. Imports
+2. Load dataset
+
+3. Step 1 — Data understanding and cleaning
+   3.1 Dataset shape and preview
+   3.2 Data types
+   3.3 Missing values
+   3.4 Categorical values
+   3.5 Duplicates
+   3.6 Invalid values
+   3.7 Outlier analysis
+   3.8 Cleaning decisions
+
+4. Step 2 — EDA
+   4.1 Descriptive statistics
+   4.2 Target distribution
+   4.3 Numerical features vs target
+   4.4 Categorical features vs target
+   4.5 Correlation matrix
+   4.6 Most influential variables
+   4.7 Feature engineering
+
+5. Step 3 — Preprocessing and models
+6. Step 4 — Optimization
+7. Step 5 — Streamlit
