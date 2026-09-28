@@ -1,0 +1,15 @@
+requests
+pandas
+
+joblib
+
+sqlalchemy
+psycopg2-binary
+
+fastapi[standard]
+uvicorn
+
+numpy
+
+scikit-learn
+pydantic

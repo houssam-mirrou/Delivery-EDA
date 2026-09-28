@@ -1,0 +1,36 @@
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+
+    container_name: weather-fastapi
+
+    environment:
+      PYTHONPATH: /app/src
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./src:/app/src
+
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+
+    container_name: weather-streamlit
+
+    ports:
+      - "8501:8501"
+
+    environment:
+      API_URL: "http://fastapi:8000/predict"
+
+    volumes:
+      - ./dashboard:/app/dashboard
+
+    depends_on:
+      - fastapi
